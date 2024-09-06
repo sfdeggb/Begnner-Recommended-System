@@ -1,2 +1,2 @@
-# beginner-recommond-system
-if you want a computer or a phone that stasify you need but don't know much about there hardware, this project is for you!
+# 小白电脑配置推荐系统
+实现小白电脑推荐网站的数据采集与分析部分代码

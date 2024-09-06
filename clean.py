@@ -2,6 +2,9 @@ import re
 import xlrd 
 import xlwt 
 
+""" 
+oppo官网手机数据清洗与整理
+"""
 #open the book 
 path="E:/desktop/oppo.xls"
 wb=xlrd.open_workbook(path)

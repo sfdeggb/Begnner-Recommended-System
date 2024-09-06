@@ -1,0 +1,53 @@
+
+
+<a id="a-link"></a>
+
+<script>
+
+  localStorage.x5referer = "http://detail.tmall.com/item.htm?abbucket=5&id=665711595440&ns=1&spm=a230r.1.14.16.1a294af9RmMY8U";	
+
+  var link = document.getElementById("a-link");
+
+  var isMobile = navigator.userAgent.match(/.*(iPhone|iPad|Android|ios|SymbianOS|Windows Phone).*/i);
+
+  var host = isMobile ? "https://login.m.taobao.com/login.htm?from=sm&ttid=h5@iframe&redirectURL=" : "https://login.taobao.com/member/login.jhtml?redirectURL=";
+
+  try {
+
+	var hostValue = window.location.host;
+
+	var parts = hostValue && hostValue.split('.');
+
+	var exp = new Date();
+
+	var maxAge = -100;
+
+	exp.setTime(exp.getTime() + maxAge);
+
+	var cookie = 'x5secdata=;maxAge=' + maxAge + ';expires=' + exp.toUTCString() + ';path=/;domain=.' + parts.slice(-2).join('.') + ';';
+
+	document.cookie = cookie;
+
+	document.cookie = cookie + 'Secure;SameSite=None';
+
+  } catch(e) {}
+
+  link.href = host + "https%3a%2f%2fdetail.tmall.com:443/item.htm%2F_____tmd_____%2Fpage%2Flogin_jump%3Frand%3DS3WxGHAgAt756EpznwfNzJq2AFA2qBNla3j6EINUS8We9dazM_iKElp8DwVSHZUevpC41Bx7RzivXIj9RnZgdg%26_lgt_%3Dcf35428bd2ffcf8654f25a5fc9efa63e___153381___410895dd63fec2aaef8ac41146bb666a___99083bda5d56ec87266c4ce0569daf06907c6a27bac354b13ec1d61252a8066e8527b67c5399fbfc43b8374052e117853d7b900bf307a7a24a26aee789d89eaf08d19d87af389be3f413e4cae7c19ee7e7aa0db17bfaea16152f64bbe57ee142538dd46a66947b48368434df796194af&uuid=cf35428bd2ffcf8654f25a5fc9efa63e";
+
+  link.click();
+
+ window._config_ = {
+
+   "action": "login",
+
+   "url": "https://login.taobao.com/member/login.jhtml?style=mini&newMini2=true&from=sm&full_redirect=false&redirectURL=https%3a%2f%2fdetail.tmall.com:443/item.htm%2F_____tmd_____%2Fpage%2Fclose_iframe_page%3Frand%3DS3WxGHAgAt756EpznwfNzJq2AFA2qBNla3j6EINUS8We9dazM_iKElp8DwVSHZUevpC41Bx7RzivXIj9RnZgdg%26uuid%3Dcf35428bd2ffcf8654f25a5fc9efa63e%26_lgt_%3Dcf35428bd2ffcf8654f25a5fc9efa63e___153381___410895dd63fec2aaef8ac41146bb666a___99083bda5d56ec87266c4ce0569daf06907c6a27bac354b13ec1d61252a8066e8527b67c5399fbfc43b8374052e117853d7b900bf307a7a24a26aee789d89eaf08d19d87af389be3f413e4cae7c19ee7e7aa0db17bfaea16152f64bbe57ee142538dd46a66947b48368434df796194af",
+
+   "h5url": "https://login.m.taobao.com/login.htm?from=sm&ttid=h5@iframe&redirectURL=https%3a%2f%2fdetail.tmall.com:443/item.htm%2F_____tmd_____%2Fpage%2Fclose_iframe_page%3Frand%3DS3WxGHAgAt756EpznwfNzJq2AFA2qBNla3j6EINUS8We9dazM_iKElp8DwVSHZUevpC41Bx7RzivXIj9RnZgdg%26uuid%3Dcf35428bd2ffcf8654f25a5fc9efa63e%26_lgt_%3Dcf35428bd2ffcf8654f25a5fc9efa63e___153381___410895dd63fec2aaef8ac41146bb666a___99083bda5d56ec87266c4ce0569daf06907c6a27bac354b13ec1d61252a8066e8527b67c5399fbfc43b8374052e117853d7b900bf307a7a24a26aee789d89eaf08d19d87af389be3f413e4cae7c19ee7e7aa0db17bfaea16152f64bbe57ee142538dd46a66947b48368434df796194af",
+
+   "dialogSize": {"width": "", "height": ""}
+
+};
+
+</script>
+
+<!--rgv587_flag:sm-->
